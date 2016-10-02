@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container panel panel-default">
+    <div class="panel-heading">chrome-api-proxy</div>
+    <div class="panel-body">
+      <button type="button" class="btn btn-primary add-button" data-toggle="modal" data-target="#myModal">新增</button>
+      <table class="table table-bordered info-list">
+        <thead>
+          <tr>
+            <th width="350">原始请求</th>
+            <th width="350">返回内容</th>
+            <th width="50">修改</th>
+            <th width="50">删除</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+        </tbody>
+      </table>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">新增</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon">原始地址</span>
+              <input type="text" class="form-control origin-request">
+            </div>
+            <div class="input-group target-text">
+              <span class="input-group-addon">目标地址</span>
+              <textarea class="form-control target-text-content"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary saveBtn">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="js/options.js"></script>
+</body>
+</html>

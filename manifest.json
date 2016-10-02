@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "api-proxy",
+    "version": "1.0",
+    "description": "轻量的api重定向工具",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page": "options.html"
+}

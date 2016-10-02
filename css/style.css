@@ -1,0 +1,22 @@
+.container {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0;
+}
+.deal-icon {
+  width: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.info-list {
+  margin-top: 20px;
+}
+.target-text {
+  margin-top: 20px;
+}
+.one-line {
+  width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
