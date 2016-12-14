@@ -33,6 +33,7 @@ $(function () {
       setData(localStorageKey, dataObj);
       renderTable(dataObj, tableBox);
     }
+    
     event.target.classList.contains('edit')
   })
 

@@ -2,7 +2,7 @@ var localStorageKey = 'api-proxy-store';
 
 chrome.webRequest.onBeforeRequest.addListener(
     dealRequest,
-    {urls: ["<all_urls>"]},
+    { urls: ["<all_urls>"] },
     ["blocking"]
 );
 
